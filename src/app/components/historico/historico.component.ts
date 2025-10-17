@@ -2,9 +2,10 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { MediaService } from '../../services/media.service';
 import { MediaRecord } from '../../models/media.model';
 @Component({
-  selector: 'app-historico',
-  templateUrl: './historico.component.html',
-  styleUrls: ['./historico.component.css']
+    selector: 'app-historico',
+    templateUrl: './historico.component.html',
+    styleUrls: ['./historico.component.css'],
+    standalone: false
 })
 export class HistoricoComponent implements OnInit {
   historico: MediaRecord[] = [];
