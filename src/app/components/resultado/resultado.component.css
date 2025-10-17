@@ -1,0 +1,103 @@
+:host {
+    display: block;
+    padding: 40px;
+}
+
+.resultado-container {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado-card {
+    background: white;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.icone-resultado {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+:host(.resultado-aprovado) .icone-resultado {
+    color: #10B981;
+}
+
+:host(.resultado-recuperacao) .icone-resultado {
+    color: #F97316;
+}
+
+:host(.resultado-reprovado) .icone-resultado {
+    color: #EF4444;
+}
+
+.status-titulo {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1E3A8A;
+}
+
+.mensagem {
+    font-size: 20px;
+    color: #374151;
+    margin-bottom: 30px;
+}
+
+.media-display {
+    background: #F3F4F6;
+    padding: 20px;
+}
+
+.media-label {
+    font-size: 18px;
+    color: #374151;
+    margin-right: 10px;
+}
+
+.media-valor {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1E3A8A;
+}
+
+.acoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #1D89B1;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #059669;
+}
+
+.btn-secondary {
+    background: #1E3A8A;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #1E40AF;
+}

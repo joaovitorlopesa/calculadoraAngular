@@ -1,0 +1,17 @@
+<div class="home-container">
+    <div class="hero-section">
+        <h1 class="main-title">Calculadora de Médias</h1>
+        <p class="subtitle">Calcule suas médias e acompanhe seu desempenho</p>
+        <p><button class="btn-primary" routerLink="/calculadora">Começar Agora</button></p>
+    </div>
+    <div class="features-section">
+        <h2 class="section-title">Funcionalidades</h2>
+        <div class="features-grid">
+            <div *ngFor="let feature of features" class="feature-item">
+                <i class="fas {{feature.icone}}"></i>
+                <h3>{{feature.titulo}}</h3>
+                <p>{{feature.descricao}}</p>
+            </div>
+        </div>
+    </div>
+</div>

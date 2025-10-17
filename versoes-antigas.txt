@@ -1,0 +1,3 @@
+"Angular CLI: $(ng version | grep 'Angular CLI')" 
+"Node.js: $(v22.20.0)" 
+"NPM: $(10.9.3)" 

@@ -1,0 +1,75 @@
+/* Reset e estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background: #1E3A8A;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-brand i {
+    font-size: 28px;
+    color: #F0B90B;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.nav-menu li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Classe aplicada pelo routerLinkActive */
+.nav-menu li a.active {
+    background: #F0B90B;
+    font-weight: 700;
+}
+
+/* Conteúdo principal */
+.main-content {
+    min-height: calc(100vh - 140px);
+    padding: 20px;
+}
+
+/* Rodapé */
+.footer {
+    background: #F3F4F6;
+    padding: 20px;
+    text-align: center;
+    color: #374151;
+    font-size: 14px;
+    border-top: 2px solid #E5E7EB;
+}

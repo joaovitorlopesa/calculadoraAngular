@@ -1,0 +1,34 @@
+<nav class="navbar">
+  <div class="nav-brand">
+    <a class="nav-brand" href="#">
+      <i class="fas fa-graduation-cap"></i>
+      <span>Calculadora de Médias</span>
+    </a>
+  </div>
+  <ul class="nav-menu">
+    <li>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/calculadora" routerLinkActive="active">
+        <i class="fas fa-calculator"></i>
+        <span>Calculadora</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/historico" routerLinkActive="active">
+        <i class="fas fa-history"></i>
+        <span>Histórico</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>
+<footer class="footer">
+  <p>&copy; 2024 Calculadora de Médias - Projeto Angular</p>
+</footer>
