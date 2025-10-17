@@ -1,0 +1,19 @@
+<div class="resultado-container">
+    <div class="resultado-card">
+        <i class="icone-resultado fas {{icone}}"></i>
+        <h2 class="status-titulo">{{ status }}</h2>
+        <p class="mensagem">{{ mensagem }}</p>
+        <div class="media-display">
+            <span class="media-label">Sua média:</span>
+            <span class="media-valor">{{ media | number:'1.2-2' }}</span>
+        </div>
+        <div class="acoes">
+            <button routerLink="/calculadora" class="btn btn-primary">
+                <i class="fas fa-calculator"></i> Calcular Novamente
+            </button>
+            <button routerLink="/historico" class="btn btn-secondary">
+                <i class="fas fa-history"></i> Ver Histórico
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="historico-container">
+    <header [class.scrolled]="scrolled">
+        <h1>Histórico de Médias</h1>
+        <button (click)="abrirModal()" *ngIf="historico.length > 0">Limpar Histórico</button>
+    </header>
+    <div class="vazio" *ngIf="historico.length === 0">
+        <i class="fas fa-inbox"></i>
+        <p>Nenhuma média calculada ainda</p>
+    </div>
+    <div class="lista-registros" *ngIf="historico.length > 0">
+        <div class="registro" *ngFor="let registro of historico; trackBy: trackByRegistro"
+            [ngClass]="'status-' + registro.status.toLowerCase()">
+            <div class="info">
+                <h3>Média: {{ registro.media }}</h3>
+                <p><b>Status:</b> {{ registro.status }}</p>
+                <p><b>Notas:</b> {{ registro.notas.join(', ') }}</p>
+                <small>{{ registro.data | date:'dd/MM/yyyy HH:mm' }}</small>
+            </div>
+        </div>
+    </div>
+    <div class="modal-container" *ngIf="mostrarModal">
+        <div class="modal-content">
+            <h2>Confirmar exclusão</h2>
+            <p>Deseja limpar todo o histórico?</p>
+            <div class="botoes">
+                <button (click)="confirmarLimpar()">Sim</button>
+                <button (click)="fecharModal()">Não</button>
+            </div>
+        </div>
+    </div>
+</div>
